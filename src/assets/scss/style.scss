@@ -1,0 +1,10 @@
+@charset "UTF-8"; //문서의 문자 인코딩을 설정하는 것으로, 해당 SCSS 파일의 문자 인코딩이 UTF-8임을 나타냅니다.
+
+// setting
+@import "setting/fonts"; //폰트 파일과 관련된 CSS를 설정합니다.
+@import "setting/vars"; //변수와 관련된 CSS를 설정합니다.
+@import "setting/reset"; //브라우저 스타일 초기화나 리셋 관련 CSS를 설정합니다.
+@import "setting/mixin"; //믹스인과 관련된 CSS를 설정합니다.
+@import "setting/common"; //공통적인 CSS 스타일을 설정합니다.
+
+// 이거 하고 index.js 가서 맨 위에 "import './assets/scss/style.scss';" 하기

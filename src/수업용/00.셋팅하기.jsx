@@ -66,5 +66,22 @@
 											 하지만 git에서 이제 master가 아닌 main를 기본으로 사용하도록 합니다.
 				- git remote add origin https://github.com/bitstudy/youtube.git => git remote 명령어는 원격 저장소를 관리하는 명령어 입니다. 위의 명령어를 통해 원격 저장소 주소를 origin이라는 이름으로 등록합니다
 				- git push -u origin main =>  원격저장소에 변경된 commit을 즉 README.md 파일을 등록
+														-u 플래그는 로컬 브랜치를 원격 브랜치와 연결하며, main 브랜치를 origin 리포지토리의 main 브랜치와 연결합니다.
+
+		3) 2번 명령어들 실행하면 내가 1번에서 파일 지웠던것들도 다 올라가져있다. (git init 명령문 때문임)
+			그래서 현재 내가 실제로 가지고 있는것들로 새로 push 를 해볼거다.
+			- git add . => .은 모든 파일을 다 올리겠다는 뜻
+			- git commit -m "첫 세팅 파일" => 현재 올리는 작업의 메세지는 "첫 세팅 파일" 로 할거임
+			- git push origin main => 커밋한걸 main 브랜치와 연결 */ 
+
+/* 4. SCSS 셋팅하기 
+	SCSS 는 SASS의 다음 버전임, 약간의 문법 차이가 있지만 SCSS가 좀 더 넓은 범용성과 CSS의 호환성의 장점.
+	큰 차이점은 SASS는 중첩으로 들여 쓰기를 사용하고 속성 구분은 줄 바꿈을 이용하지만, SCSS의 경우 중괄호로 중첩을 표현하고 세미콜론으로 속성을 구분함
+
+		1) src > assets 안에 "fonts, img, scss" 폴더 생성
+		2) scss 폴더 안에 "section, setting" 폴더랑 "style.scss" 파일 만들고
+		3) setting 폴더 안에 "_common.scss, _fonts.scss, _mixin.scss, _reset.scss, _vars.scss" 파일 만들기
+		  (_ 를 붙이는 이유는 다른파일(style.scss) 에서 사용한다는 뜻)
+
 */
 		

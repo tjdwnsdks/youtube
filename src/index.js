@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-/* 삭제 *///import './index.css';
 import App from './App';
 
-/* 삭제 */
-// import reportWebVitals from './reportWebVitals';
+/* 추가 -  src > assets > scss 폴더 구성 끝나고 와서 하기 */
+import './assets/scss/style.scss';
+// 이거 하고 _fonts.scss 가기
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,10 +13,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-
-/* 삭제 */
-// reportWebVitals();
+ 
